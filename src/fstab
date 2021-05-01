@@ -1,0 +1,12 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+
+# /dev/nvme0n1p4
+UUID=b107b546-31f4-4af7-84ff-ea59207bd6dd / btrfs rw,noatime,ssd,compress=lzo,space_cache,subvolid=5,subvol=/ 0 0
+
+# /dev/nvme0n1p1
+UUID=1AD8-DB54 /boot vfat rw,noatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro 0 2
+
+tmpfs /var/cache/pacman/pkg tmpfs rw,noatime,nodev 0 0
